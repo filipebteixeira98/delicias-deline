@@ -221,6 +221,10 @@ img {
   z-index: -1;
 }
 
+.active-link {
+  color: var(--first-color);
+}
+
 .home {
   position: relative;
   padding-top: 6.5rem;
