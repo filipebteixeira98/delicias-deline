@@ -60,3 +60,66 @@ const handleScrollToSection = () => {
 }
 
 window.addEventListener('scroll', handleScrollToSection)
+
+const scrollRevealConfig = ScrollReveal({
+  origin: 'top',
+  distance: '40px',
+  opacity: 1,
+  scale: 1.1,
+  duration: 2500,
+  delay: 300,
+})
+
+scrollRevealConfig.reveal('.home__data, .about__img, .about__data, .visit__data')
+
+scrollRevealConfig.reveal('.home__image, .footer__img-1, .footer__img-2', {
+  rotate: {
+    z: -15,
+  },
+})
+
+scrollRevealConfig.reveal('.home__bread, .about__bread', {
+  rotate: {
+    z: 15,
+  },
+})
+
+scrollRevealConfig.reveal('.home__footer', {
+  scale: 1,
+  origin: 'bottom',
+})
+
+scrollRevealConfig.reveal('.new__card:nth-child(1) img', {
+  rotate: {
+    z: -30,
+  },
+  distance: 0,
+})
+
+scrollRevealConfig.reveal('.new__card:nth-child(2) img', {
+  rotate: {
+    z: 15,
+  },
+  distance: 0,
+  delay: 600,
+})
+
+scrollRevealConfig.reveal('.new__card:nth-child(3) img', {
+  rotate: {
+    z: -30,
+  },
+  distance: 0,
+  delay: 900,
+})
+
+scrollRevealConfig.reveal('.favorite__card img', {
+  interval: 100,
+  rotate: {
+    z: 15,
+  },
+  distance: 0,
+})
+
+scrollRevealConfig.reveal('.footer__container ', {
+  scale: 1,
+})
